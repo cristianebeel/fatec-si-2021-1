@@ -1,2 +1,4 @@
-# fatec-si-2021-1
- Repositório para as aulas do 2° semestre do curso de Sistemas para Internet, na Fatec Taquaritinga. 
+### Aulas do 1° semestre do curso de Sistemas para Internet, na Fatec Taquaritinga.
+
+* Criação de Sites II
+  * Foco em Frameworks e Animação em CSS e responsividade de sites utilizando Media Query.
