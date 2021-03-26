@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+  
+html, body{
+    height: 100%;
+    font: 14px/1.5 sans-serif;
+}
+
+img{
+    max-width: 30%;
+    border: 0.1rem solid #333;
+}
+
+header{
+    background-color: #ccc;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+aside{
+    background-color: #ac9d93;
+    padding: 1rem;
+    text-align: center;
+}
+
+section{
+    padding: 2rem;
+}
+
+section .dados p:last-child{
+    visibility: hidden;
+}
+
+section .imagens{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+section .imagens img{
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #f4d7d7;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+@media(min-width: 900px){
+    body{
+        font-size: 1.2rem;
+    }
+
+    img{
+        max-width: 35%;
+    }
+
+    header{
+        background-color: #000;
+        color: #fff;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    aside{
+        width: 20%;
+        height: 100%;
+        float: right;
+        padding-top: 3rem;
+    }
+
+    aside img{
+        max-width: 70%;
+    }
+
+    section{
+        width: 80%;
+        padding: 5rem;
+    }
+
+    section .dados p:last-child{
+        visibility: visible;
+    }
+
+    section .imagens{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    footer{
+        clear: both;
+        position: relative;
+        bottom: 0;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}

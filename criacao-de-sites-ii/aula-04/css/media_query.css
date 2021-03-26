@@ -1,0 +1,36 @@
+/* Mobile First */
+body{
+    background-color: #ccc;
+}
+
+@media(min-width:900px){
+    body{
+        background-color: cadetblue;
+    }
+}
+
+@media(min-width:1200px){
+    body{
+        background-color: rgb(35, 68, 70);
+        color: #fff;
+    }
+}
+
+/* ------------------------------------------------------ */
+/* body{
+    background-color: rgb(35, 68, 70);
+        color: #fff;
+}
+
+@media(max-width:1200px){
+    body{
+        background-color: cadetblue;
+        color: #000;
+    }
+}
+
+@media(max-width:900px){
+    body{
+        background-color: #ccc;
+    }
+} */

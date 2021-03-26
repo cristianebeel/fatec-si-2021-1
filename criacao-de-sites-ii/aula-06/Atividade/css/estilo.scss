@@ -1,0 +1,61 @@
+$cor-fundo: #fcffe0;
+$cor-fonte: #7e7e7e;
+$cor-borda: #00a18c;
+$cor-fundo-hover: #bbfff9;
+$cor-fonte-hover: #333;
+
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+   padding: 5rem;
+}
+
+@mixin estilo-botao{
+    height: 3rem;
+    width: 10rem;
+    background-color: $cor-fundo;
+    color: $cor-fonte;
+    border: 0.2rem $cor-borda solid;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+@keyframes botao-animado{
+    from{
+        font-size: 1rem;
+    }
+    to{
+        background-color: $cor-fundo-hover;
+        color: $cor-fonte-hover;
+        font-size: 1.2rem;
+        transform: scale(1.25);
+    }
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+button{
+    @include estilo-botao;
+}
+
+button:hover{
+    cursor: pointer;
+    animation-name: botao-animado;
+    animation-duration: 1s;
+}

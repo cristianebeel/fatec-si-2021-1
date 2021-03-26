@@ -1,0 +1,13 @@
+img{
+    max-width: 300px;
+}
+
+.btn-outline-success{
+    color: blue;
+    border-color: aqua;
+}
+
+.row div{
+    background-color:azure;
+    border: 1px solid #333;
+}

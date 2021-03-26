@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container p {
+  animation-name: animacao2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-bottom: 2px solid #fff;
+}
+
+.container p:hover {
+  animation-name: menu;
+  animation-duration: 1s;
+}
+
+@keyframes menu {
+  from {
+    color: #777;
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  to {
+    transform: rotate(180deg);
+    color: #333;
+    background-color: #eee;
+    border-bottom: 2px solid #333;
+  }
+}
+
+@keyframes animacao {
+  from {
+    transform: translate(0, 0) rotate(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(100px, 300px) rotate(180deg) scale(3);
+    opacity: 0.5;
+    background-color: aqua;
+  }
+}
+
+@keyframes animacao2 {
+  from {
+    background-color: aqua;
+  }
+  20% {
+    background-color: aquamarine;
+  }
+  40% {
+    background-color: bisque;
+  }
+  80% {
+    background-color: burlywood;
+  }
+  to {
+    background-color: cornflowerblue;
+  }
+}

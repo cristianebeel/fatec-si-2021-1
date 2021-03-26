@@ -1,0 +1,27 @@
+.principal{
+    text-align: center;
+}
+
+.principal .image{
+    margin: 0 auto;
+}
+
+@media(min-width:768px){
+    .principal{
+        text-align: right;
+    }
+
+    .principal .image{
+        float: right;
+    }
+}
+
+@media(min-width:1200px){
+    .principal .subtitle{
+        font-size: 3em;
+    }
+
+    .principal .image{
+        float: left;
+    }
+}

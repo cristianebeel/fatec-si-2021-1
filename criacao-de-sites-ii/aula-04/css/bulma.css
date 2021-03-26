@@ -1,0 +1,17 @@
+.column{
+    background-color: aqua;
+    border: 1px solid #333;
+}
+
+@media(min-width:900px){
+    body{
+        background-color: cadetblue;
+    }
+}
+
+@media(min-width:1200px){
+    body{
+        background-color: rgb(35, 68, 70);
+        color: #fff;
+    }
+}
